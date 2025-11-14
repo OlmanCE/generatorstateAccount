@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Estado de Cuenta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO (se mostrará en la PRIMERA página) -->
+    <header id="first-header">
+        <div class="header-left">
+            <img src="logo_left.png" alt="logo_left" class="logo-left">
+        </div>
+
+        <div class="header-center">
+            <h2>Cooperativa Nacional Educadores R.L.</h2>
+            <h3>Listado de Movimientos de Cuentas por Cliente</h3>
+            <p>{{ periodo.inicio }} al {{ periodo.fin }}</p>
+        </div>
+
+        <div class="header-right">
+            <img src="logo_right.png" alt="logo_right" class="logo-right">
+            <div class="page-number"></div>
+            <p class="fecha">{{ fecha_creacion }}</p>
+        </div>
+    </header>
+
+
+    <!-- DATOS DEL CLIENTE -->
+    <section class="info">
+        <h4>{{ cuenta.tipo }}</h4>
+
+        <div class="info-grid">
+            <div><strong>Asociado(a):</strong> {{ cliente.nombre }}</div>
+            <div><strong>Cédula:</strong> {{ cliente.cedula }}</div>
+            <div><strong>No. Cuenta:</strong> {{ cuenta.numero }}</div>
+            <div><strong>Cuenta IBAN:</strong> {{ cuenta.iban }}</div>
+        </div>
+    </section>
+
+    <!-- TABLA -->
+    <table class="mov-table">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Saldo Anterior</th>
+                <th>Crédito</th>
+                <th>Débito</th>
+                <th>Saldo Actual</th>
+                <th>Detalle</th>
+                <th>Describe Transac.</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for m in movimientos %}
+            <tr>
+                <td>{{ m.fecha }}</td>
+                <td>{{ m.saldo_anterior }}</td>
+                <td>{{ m.credito }}</td>
+                <td>{{ m.debito }}</td>
+                <td>{{ m.saldo_actual }}</td>
+                <td>{{ m.detalle }}</td>
+                <td>{{ m.descripcion }}</td>
+            </tr>
+
+            {% if m.observacion %}
+            <tr class="obs-row">
+                <td colspan="7">
+                    <strong>Obs 1:</strong> {{ m.observacion }}
+                </td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Usuario: {{ usuario }}</p>
+    </footer>
+
+</body>
+
+</html>

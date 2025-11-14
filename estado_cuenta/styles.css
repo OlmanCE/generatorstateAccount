@@ -1,0 +1,108 @@
+@page {
+    margin: 110px 30px 80px 30px;
+    @bottom-center {
+        content: element(footer);
+    }
+}
+
+/* Show the full header only on the first page */
+@page :first {
+    @top-center {
+        content: element(first-header);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* First-page header (moved to top only on first page) */
+#first-header {
+    position: running(first-header);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #999;
+}
+
+.header-left {
+    text-align: left;
+}
+
+.header-center {
+    text-align: center;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.logo-left {
+    width: 220px;
+}
+
+.logo-right {
+    width: 64px;
+    margin-bottom: 2px;
+}
+
+.page-number {
+    font-size: 11px;
+    margin: 0 0 4px 0;
+}
+
+.page-number:before {
+    content: "Pág. " counter(page) " de " counter(pages);
+}
+
+.fecha {
+    font-size: 11px;
+    margin: 0;
+}
+
+
+footer {
+    position: running(footer);
+    border-top: 1px solid #444;
+    padding-top: 5px;
+    font-size: 11px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.info {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 1.4;
+}
+
+.mov-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+.mov-table th {
+    border-bottom: 1px solid #333;
+    padding: 4px;
+}
+
+.mov-table td {
+    padding: 4px;
+    border-bottom: 1px solid #eee;
+}
+
+.obs-row td {
+    background: #f7f7f7;
+    font-size: 10.8px;
+    padding-left: 6px;
+}

@@ -1,0 +1,147 @@
+{
+  "empresa": {
+    "nombre": "Cooperativa Nacional Educadores R.L.",
+    "logo": "logo.png"
+  },
+
+  "cliente": {
+    "nombre": "CASTRO ESPINOZA OLMAN",
+    "cedula": "402620213"
+  },
+
+  "cuenta": {
+    "tipo": "AHORRO VISTA WINK COLONES (139)",
+    "numero": "3107715",
+    "iban": "CR78081400011031077153"
+  },
+
+  "periodo": {
+    "inicio": "01-MAY-2025",
+    "fin": "31-OCT-2025"
+  },
+
+  "usuario": "KROMAN",
+
+  "movimientos": [
+    {
+      "fecha": "01/05/2025",
+      "saldo_anterior": 5443.13,
+      "credito": 40000.00,
+      "debito": 0.00,
+      "saldo_actual": 45443.13,
+      "detalle": "Traslado entre Cuentas Envio ODBRefNumber: 59865259",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS, TRANSACCION # 99244474"
+    },
+    {
+      "fecha": "01/05/2025",
+      "saldo_anterior": 45443.13,
+      "credito": 20000.00,
+      "debito": 0.00,
+      "saldo_actual": 65443.13,
+      "detalle": "Traslado entre Cuentas Pago ODBRefNumber: 59865573",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS, TRANSACCION # 99244917"
+    },
+    {
+      "fecha": "01/05/2025",
+      "saldo_anterior": 65443.13,
+      "credito": 0.00,
+      "debito": 50479.40,
+      "saldo_actual": 14964.13,
+      "detalle": "Comercio MAXIPALI CIUDAD QUESADA OCALAJUELA CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 807906  Referencia No: 512121971143"
+    },
+    {
+      "fecha": "01/05/2025",
+      "saldo_anterior": 14964.13,
+      "credito": 0.00,
+      "debito": 1086.77,
+      "saldo_actual": 13877.36,
+      "detalle": "Comercio DLC* UBER RIDES SAN JOSE  CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 581622  Referencia No: 512213221108"
+    },
+    {
+      "fecha": "02/05/2025",
+      "saldo_anterior": 13877.36,
+      "credito": 0.00,
+      "debito": 9090.00,
+      "saldo_actual": 4787.36,
+      "detalle": "Pago Servicio Público: ICEE 2067529",
+      "descripcion": "",
+      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715 C.C. CR78081400011031077153"
+    },
+    {
+      "fecha": "02/05/2025",
+      "saldo_anterior": 4787.36,
+      "credito": 150000.00,
+      "debito": 0.00,
+      "saldo_actual": 154787.36,
+      "detalle": "Traslado entre Cuentas Envio ODBRefNumber: 59975003",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS, TRANSACCION # 99044379"
+    },
+    {
+      "fecha": "02/05/2025",
+      "saldo_anterior": 154787.36,
+      "credito": 0.00,
+      "debito": 6035.00,
+      "saldo_actual": 148752.36,
+      "detalle": "Comercio SUPERMERCADO MULTICOMPR ALAJUELA CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 963733  Referencia No: 512221726530"
+    },
+    {
+      "fecha": "03/05/2025",
+      "saldo_anterior": 148752.36,
+      "credito": 0.00,
+      "debito": 11271.90,
+      "saldo_actual": 137480.46,
+      "detalle": "Pago Servicio Público: TELEFONICA 63355558",
+      "descripcion": "",
+      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715 C.C. CR78081400011031077153"
+    },
+    {
+      "fecha": "03/05/2025",
+      "saldo_anterior": 137480.46,
+      "credito": 5000.00,
+      "debito": 0.00,
+      "saldo_actual": 132480.46,
+      "detalle": "SINPE MOVIL (SERVICIO 83) CorteCabello. Transf",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Referencia: 202505031483000634252591"
+    },
+    {
+      "fecha": "03/05/2025",
+      "saldo_anterior": 132480.46,
+      "credito": 0.00,
+      "debito": 1250.00,
+      "saldo_actual": 131230.46,
+      "detalle": "Comercio PANADERIA INOCENTE SAN ALAJUELA CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 194202  Referencia No: 512231122656"
+    },
+    {
+      "fecha": "03/05/2025",
+      "saldo_anterior": 131230.46,
+      "credito": 0.00,
+      "debito": 1650.00,
+      "saldo_actual": 129580.46,
+      "detalle": "Comercio MCDONALD S SAN CARLOS  ALAJUELA CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 316524  Referencia No: 512321082780"
+    },
+    {
+      "fecha": "03/05/2025",
+      "saldo_anterior": 129580.46,
+      "credito": 0.00,
+      "debito": 4140.00,
+      "saldo_actual": 125440.46,
+      "detalle": "Comercio ALM EL REY 15 SAN CARLOS ALAJUELA CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": ""
+    }
+  ]
+}
