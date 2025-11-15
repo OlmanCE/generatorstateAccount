@@ -32,15 +32,17 @@ temp_html_path = os.path.join(BASE_DIR, "temp.html")
 with open(temp_html_path, "w", encoding="utf-8") as f:
     f.write(html_rendered)
 
-# Opciones PDF
+# Opciones PDF - TAMAÑO EXACTO 11" x 8.5"
 options = {
     "page-size": "Letter",
+    "orientation": "Landscape",  # 11" ancho x 8.5" alto = Landscape
     "encoding": "UTF-8",
-    "margin-top": "20mm",
-    "margin-bottom": "20mm",
-    "margin-left": "10mm",
-    "margin-right": "10mm",
-    "enable-local-file-access": None
+    "margin-top": "15mm",
+    "margin-bottom": "15mm",
+    "margin-left": "15mm",
+    "margin-right": "15mm",
+    "enable-local-file-access": None,
+    "dpi": 96
 }
 
 # Salida PDF

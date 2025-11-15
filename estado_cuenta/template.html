@@ -9,10 +9,10 @@
 
 <body>
 
-    <!-- ENCABEZADO (se mostrará en la PRIMERA página) -->
-    <header id="first-header">
+    <!-- ========== HEADER (EN TODAS LAS PÁGINAS) ========== -->
+    <header class="main-header">
         <div class="header-left">
-            <img src="logo_left.png" alt="logo_left" class="logo-left">
+            <img src="logo_left.png" alt="WINK" class="logo-left">
         </div>
 
         <div class="header-center">
@@ -22,26 +22,36 @@
         </div>
 
         <div class="header-right">
-            <img src="logo_right.png" alt="logo_right" class="logo-right">
-            <div class="page-number"></div>
-            <p class="fecha">{{ fecha_creacion }}</p>
+            <img src="logo_right.png" alt="Logo" class="logo-right">
+            <div class="page-info">
+                <div>Pág. 1 de 1</div>
+                <div>{{ fecha_creacion }}</div>
+            </div>
         </div>
     </header>
 
+    <!-- ========== SECCIÓN PRIMERA PÁGINA (INFO CUENTA) ========== -->
+    <section class="primera-pagina">
+        <div class="titulo-detalle">Detalle de movimientos de la cuenta</div>
 
-    <!-- DATOS DEL CLIENTE -->
-    <section class="info">
-        <h4>{{ cuenta.tipo }}</h4>
+        <div class="tipo-cuenta">{{ cuenta.tipo }}</div>
 
-        <div class="info-grid">
-            <div><strong>Asociado(a):</strong> {{ cliente.nombre }}</div>
-            <div><strong>Cédula:</strong> {{ cliente.cedula }}</div>
-            <div><strong>No. Cuenta:</strong> {{ cuenta.numero }}</div>
-            <div><strong>Cuenta IBAN:</strong> {{ cuenta.iban }}</div>
+        <div class="info-cliente">
+            <div><strong>Asociado(a)</strong></div>
+            <div>{{ cliente.nombre }}</div>
+
+            <div><strong>Cédula</strong></div>
+            <div>{{ cliente.cedula }}</div>
+
+            <div><strong>No. Cuenta</strong></div>
+            <div>{{ cuenta.numero }}</div>
+
+            <div><strong>Cuenta IBAN</strong></div>
+            <div>{{ cuenta.iban }}</div>
         </div>
     </section>
 
-    <!-- TABLA -->
+    <!-- ========== TABLA DE MOVIMIENTOS ========== -->
     <table class="mov-table">
         <thead>
             <tr>
@@ -54,33 +64,37 @@
                 <th>Describe Transac.</th>
             </tr>
         </thead>
-
         <tbody>
             {% for m in movimientos %}
             <tr>
                 <td>{{ m.fecha }}</td>
-                <td>{{ m.saldo_anterior }}</td>
-                <td>{{ m.credito }}</td>
-                <td>{{ m.debito }}</td>
-                <td>{{ m.saldo_actual }}</td>
+                <td>{{ "%.2f"|format(m.saldo_anterior) }}</td>
+                <td>{{ "%.2f"|format(m.credito) }}</td>
+                <td>{{ "%.2f"|format(m.debito) }}</td>
+                <td>{{ "%.2f"|format(m.saldo_actual) }}</td>
                 <td>{{ m.detalle }}</td>
                 <td>{{ m.descripcion }}</td>
             </tr>
-
             {% if m.observacion %}
             <tr class="obs-row">
-                <td colspan="7">
-                    <strong>Obs 1:</strong> {{ m.observacion }}
-                </td>
+                <td style="text-align: center;"><strong>Obs 1</strong></td>
+                <td colspan="6">{{ m.observacion }}</td>
             </tr>
             {% endif %}
             {% endfor %}
         </tbody>
     </table>
 
-    <!-- PIE DE PÁGINA -->
-    <footer>
-        <p>Usuario: {{ usuario }}</p>
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+        <div class="footer-left">
+            <p>Usuario</p>
+            <p>{{ usuario }}</p>
+            <p>Fecha de Creación: {{ fecha_creacion }}</p>
+        </div>
+        <div class="footer-right">
+            1 de 1
+        </div>
     </footer>
 
 </body>

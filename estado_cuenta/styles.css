@@ -1,30 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @page {
-    margin: 110px 30px 80px 30px;
+    size: 11in 8.5in;
+    margin: 15mm;
+
+    @top-center {
+        content: element(header);
+    }
+
     @bottom-center {
         content: element(footer);
     }
 }
 
-/* Show the full header only on the first page */
-@page :first {
-    @top-center {
-        content: element(first-header);
-    }
-}
-
 body {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1.3;
 }
 
-/* First-page header (moved to top only on first page) */
-#first-header {
-    position: running(first-header);
+/* Header y footer fijos en todas las páginas */
+.main-header {
+    position: running(header);
+}
+
+.main-footer {
+    position: running(footer);
+}
+
+/* Evitar saltos de página dentro de filas */
+.mov-table tr {
+    page-break-inside: avoid;
+}
+
+/* Repetir encabezados de tabla en cada página */
+.mov-table thead {
+    display: table-header-group;
+}
+
+.mov-table tbody {
+    display: table-row-group;
+}
+
+/* ========== HEADER (todas las páginas) ========== */
+.main-header {
+    position: running(header);
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #999;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: start;
+    gap: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
 }
 
 .header-left {
@@ -33,6 +63,28 @@ body {
 
 .header-center {
     text-align: center;
+    padding-top: 5px;
+}
+
+.header-center h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0 0 3px 0;
+}
+
+.header-center h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9.96pt;
+    font-weight: bold;
+    margin: 0 0 3px 0;
+}
+
+.header-center p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9.96pt;
+    font-weight: normal;
+    margin: 0;
 }
 
 .header-right {
@@ -40,69 +92,153 @@ body {
 }
 
 .logo-left {
-    width: 220px;
+    width: 180px;
+    height: auto;
 }
 
 .logo-right {
-    width: 64px;
-    margin-bottom: 2px;
+    width: 60px;
+    height: auto;
+    margin-bottom: 8px;
 }
 
-.page-number {
-    font-size: 11px;
-    margin: 0 0 4px 0;
-}
-
-.page-number:before {
-    content: "Pág. " counter(page) " de " counter(pages);
-}
-
-.fecha {
-    font-size: 11px;
-    margin: 0;
-}
-
-
-footer {
-    position: running(footer);
-    border-top: 1px solid #444;
-    padding-top: 5px;
-    font-size: 11px;
-}
-
-.logo {
-    width: 120px;
-}
-
-.info {
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.page-info {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    font-weight: normal;
     line-height: 1.4;
 }
 
+/* ========== PRIMERA PÁGINA - INFO CUENTA ========== */
+.primera-pagina {
+    margin-bottom: 15px;
+}
+
+.titulo-detalle {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.tipo-cuenta {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 10px 0 15px 0;
+}
+
+.info-cliente {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+.info-cliente strong {
+    font-weight: bold;
+}
+
+/* ========== TABLA DE MOVIMIENTOS ========== */
 .mov-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 11px;
+    font-size: 9px;
+    margin-top: 15px;
+}
+
+.mov-table thead {
+    background-color: #bfbfbf;
 }
 
 .mov-table th {
-    border-bottom: 1px solid #333;
-    padding: 4px;
+    border: 1px solid #000;
+    padding: 12px 4px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 7pt;
+    height: 28px;
 }
 
 .mov-table td {
-    padding: 4px;
-    border-bottom: 1px solid #eee;
+    border: 1px solid #000;
+    padding: 8px 4px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 7pt;
+    font-weight: normal;
+    vertical-align: middle;
+    height: 28px;
 }
 
+/* Alineación de columnas numéricas */
+.mov-table td:nth-child(2),
+.mov-table td:nth-child(3),
+.mov-table td:nth-child(4),
+.mov-table td:nth-child(5) {
+    text-align: right;
+}
+
+/* Columna Fecha */
+.mov-table td:nth-child(1) {
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Filas de observación */
 .obs-row td {
-    background: #f7f7f7;
-    font-size: 10.8px;
-    padding-left: 6px;
+    background-color: #bfbfbf;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 8px 4px 8px 4px;
+    border: 1px solid #000;
+    vertical-align: middle;
+    height: 28px;
+}
+
+.obs-label {
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* ========== FOOTER ========== */
+.main-footer {
+    position: running(footer);
+    padding-top: 8px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    font-weight: normal;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    border-top: 1px solid #000;
+}
+
+.footer-left p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.footer-right {
+    text-align: right;
+    font-size: 9pt;
+}
+
+/* ========== UTILIDADES ========== */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.font-bold {
+    font-weight: bold;
 }
