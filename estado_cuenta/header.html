@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* Aumentando letter-spacing global de 0.5px a 1px */
+            letter-spacing: 1px;
+        }
+
+        .header-container {
+            width: 100%;
+            padding: 10px 15px;
+            box-sizing: border-box;
+        }
+
+        .main-header {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .header-left {
+            display: table-cell;
+            width: 15%;
+            vertical-align: middle;
+        }
+
+        .header-center {
+            display: table-cell;
+            width: 70%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .header-right {
+            display: table-cell;
+            width: 15%;
+            text-align: right;
+            vertical-align: middle;
+        }
+
+        .logo-left {
+            width: 110px;
+            height: auto;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .logo-right {
+            width: 80px;
+            height: auto;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .header-center h2 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+            /* Aumentando letter-spacing de 2px a 3px para títulos en negrita */
+            letter-spacing: 3px;
+        }
+
+        .header-center h3 {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            font-weight: bold;
+            /* Aumentando letter-spacing de 2px a 3px para subtítulos en negrita */
+            letter-spacing: 3px;
+        }
+
+        .header-center p {
+            margin: 5px 0 0 0;
+            font-size: 12px;
+            /* Agregando letter-spacing de 0.8px para párrafos */
+            letter-spacing: 0.8px;
+        }
+
+        .header-right-content {
+            display: inline-block;
+            text-align: right;
+        }
+
+        .page-info {
+            margin-top: 5px;
+            font-size: 11px;
+            /* Agregando letter-spacing de 0.8px para info de página */
+            letter-spacing: 0.8px;
+        }
+    </style>
+    <!-- Script para manejar la numeración de páginas -->
+    <script>
+        function subst() {
+            var vars = {};
+            var query_strings_from_url = document.location.search.substring(1).split('&');
+            for (var query_string in query_strings_from_url) {
+                if (query_strings_from_url.hasOwnProperty(query_string)) {
+                    var temp_var = query_strings_from_url[query_string].split('=', 2);
+                    vars[temp_var[0]] = decodeURI(temp_var[1]);
+                }
+            }
+            var css_selector_classes = ['page', 'topage'];
+            for (var css_class in css_selector_classes) {
+                if (css_selector_classes.hasOwnProperty(css_class)) {
+                    var element = document.getElementsByClassName(css_selector_classes[css_class]);
+                    for (var j = 0; j < element.length; ++j) {
+                        element[j].textContent = vars[css_selector_classes[css_class]];
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body onload="subst()">
+    <div class="header-container">
+        <div class="main-header">
+            <div class="header-left">
+                <img src="logo_left.png" alt="WINK" class="logo-left">
+            </div>
+            <div class="header-center">
+                <h2>{{ empresa.nombre }}</h2>
+                <h3>Listado de Movimientos de Cuentas por Cliente</h3>
+                <p>{{ periodo.inicio }} al {{ periodo.fin }}</p>
+            </div>
+            <div class="header-right">
+                <div class="header-right-content">
+                    <img src="logo_right.png" alt="Logo" class="logo-right">
+                    <div class="page-info">
+                        <div>Pag. <span class="page"></span> de <span class="topage"></span></div>
+                        <div>{{ fecha_creacion }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

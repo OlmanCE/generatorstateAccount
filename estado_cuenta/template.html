@@ -9,52 +9,38 @@
 
 <body>
 
-    <!-- ========== HEADER (EN TODAS LAS PÁGINAS) ========== -->
-    <header class="main-header">
-        <div class="header-left">
-            <img src="logo_left.png" alt="WINK" class="logo-left">
-        </div>
-
-        <div class="header-center">
-            <h2>Cooperativa Nacional Educadores R.L.</h2>
-            <h3>Listado de Movimientos de Cuentas por Cliente</h3>
-            <p>{{ periodo.inicio }} al {{ periodo.fin }}</p>
-        </div>
-
-        <div class="header-right">
-            <img src="logo_right.png" alt="Logo" class="logo-right">
-            <div class="page-info">
-                <div>Pág. 1 de 1</div>
-                <div>{{ fecha_creacion }}</div>
-            </div>
-        </div>
-    </header>
-
     <!-- ========== SECCIÓN PRIMERA PÁGINA (INFO CUENTA) ========== -->
     <section class="primera-pagina">
         <div class="titulo-detalle">Detalle de movimientos de la cuenta</div>
 
         <div class="tipo-cuenta">{{ cuenta.tipo }}</div>
 
-        <div class="info-cliente">
-            <div><strong>Asociado(a)</strong></div>
-            <div>{{ cliente.nombre }}</div>
-
-            <div><strong>Cédula</strong></div>
-            <div>{{ cliente.cedula }}</div>
-
-            <div><strong>No. Cuenta</strong></div>
-            <div>{{ cuenta.numero }}</div>
-
-            <div><strong>Cuenta IBAN</strong></div>
-            <div>{{ cuenta.iban }}</div>
-        </div>
+        <table class="info-cliente">
+            <tr>
+                <td class="label"><strong>Asociado(a)</strong></td>
+                <td class="value">{{ cliente.nombre }}</td>
+            </tr>
+            <tr>
+                <td class="label"><strong>Cédula</strong></td>
+                <td class="value">{{ cliente.cedula }}</td>
+            </tr>
+            <tr>
+                <td class="label"><strong>No. Cuenta</strong></td>
+                <td class="value">{{ cuenta.numero }}</td>
+            </tr>
+            <tr>
+                <td class="label"><strong>Cuenta IBAN</strong></td>
+                <td class="value">{{ cuenta.iban }}</td>
+            </tr>
+        </table>
     </section>
 
     <!-- ========== TABLA DE MOVIMIENTOS ========== -->
+    <!-- Eliminado thead para evitar que los títulos se repitan en cada página -->
     <table class="mov-table">
-        <thead>
-            <tr>
+        <tbody>
+            <!-- Títulos de columnas movidos a tbody como fila normal -->
+            <tr class="header-row">
                 <th>Fecha</th>
                 <th>Saldo Anterior</th>
                 <th>Crédito</th>
@@ -63,39 +49,25 @@
                 <th>Detalle</th>
                 <th>Describe Transac.</th>
             </tr>
-        </thead>
-        <tbody>
-            {% for m in movimientos %}
+            {% for mov in movimientos %}
             <tr>
-                <td>{{ m.fecha }}</td>
-                <td>{{ "%.2f"|format(m.saldo_anterior) }}</td>
-                <td>{{ "%.2f"|format(m.credito) }}</td>
-                <td>{{ "%.2f"|format(m.debito) }}</td>
-                <td>{{ "%.2f"|format(m.saldo_actual) }}</td>
-                <td>{{ m.detalle }}</td>
-                <td>{{ m.descripcion }}</td>
+                <td>{{ mov.fecha }}</td>
+                <td>{{ mov.saldo_anterior }}</td>
+                <td>{{ mov.credito }}</td>
+                <td>{{ mov.debito }}</td>
+                <td>{{ mov.saldo_actual }}</td>
+                <td>{{ mov.detalle }}</td>
+                <td>{{ mov.descripcion }}</td>
             </tr>
-            {% if m.observacion %}
+            {% if mov.observacion %}
             <tr class="obs-row">
-                <td style="text-align: center;"><strong>Obs 1</strong></td>
-                <td colspan="6">{{ m.observacion }}</td>
+                <td class="obs-label"><strong>Obs 1</strong></td>
+                <td colspan="5" class="obs-content">{{ mov.observacion }}</td>
             </tr>
             {% endif %}
             {% endfor %}
         </tbody>
     </table>
-
-    <!-- ========== FOOTER ========== -->
-    <footer class="main-footer">
-        <div class="footer-left">
-            <p>Usuario</p>
-            <p>{{ usuario }}</p>
-            <p>Fecha de Creación: {{ fecha_creacion }}</p>
-        </div>
-        <div class="footer-right">
-            1 de 1
-        </div>
-    </footer>
 
 </body>
 

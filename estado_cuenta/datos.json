@@ -1,147 +1,825 @@
 {
   "empresa": {
-    "nombre": "Cooperativa Nacional Educadores R.L.",
-    "logo": "logo.png"
+    "nombre": "Cooperativa Nacional Educadores R.L."
   },
-
   "cliente": {
     "nombre": "CASTRO ESPINOZA OLMAN",
     "cedula": "402620213"
   },
-
   "cuenta": {
     "tipo": "AHORRO VISTA WINK COLONES (139)",
     "numero": "3107715",
     "iban": "CR78081400011031077153"
   },
-
   "periodo": {
-    "inicio": "01-MAY-2025",
-    "fin": "31-OCT-2025"
+    "inicio": " 01 - MAY - 2025",
+    "fin": "31 - OCT - 2025"
   },
-
   "usuario": "KROMAN",
-
   "movimientos": [
     {
-      "fecha": "01/05/2025",
-      "saldo_anterior": 5443.13,
-      "credito": 40000.00,
-      "debito": 0.00,
-      "saldo_actual": 45443.13,
-      "detalle": "Traslado entre Cuentas Envio ODBRefNumber: 59865259",
-      "descripcion": "",
-      "observacion": "NC TRANSF. CTAS, TRANSACCION # 99244474"
-    },
-    {
-      "fecha": "01/05/2025",
-      "saldo_anterior": 45443.13,
-      "credito": 20000.00,
-      "debito": 0.00,
-      "saldo_actual": 65443.13,
-      "detalle": "Traslado entre Cuentas Pago ODBRefNumber: 59865573",
-      "descripcion": "",
-      "observacion": "NC TRANSF. CTAS, TRANSACCION # 99244917"
-    },
-    {
-      "fecha": "01/05/2025",
-      "saldo_anterior": 65443.13,
-      "credito": 0.00,
-      "debito": 50479.40,
-      "saldo_actual": 14964.13,
-      "detalle": "Comercio MAXIPALI CIUDAD QUESADA OCALAJUELA CR Num. Tarjeta 4345*******0024",
-      "descripcion": "",
-      "observacion": "TM: S Autorizacion: 807906  Referencia No: 512121971143"
-    },
-    {
-      "fecha": "01/05/2025",
-      "saldo_anterior": 14964.13,
-      "credito": 0.00,
-      "debito": 1086.77,
-      "saldo_actual": 13877.36,
-      "detalle": "Comercio DLC* UBER RIDES SAN JOSE  CR Num. Tarjeta 4345*******0024",
-      "descripcion": "",
-      "observacion": "TM: S Autorizacion: 581622  Referencia No: 512213221108"
-    },
-    {
       "fecha": "02/05/2025",
-      "saldo_anterior": 13877.36,
-      "credito": 0.00,
-      "debito": 9090.00,
-      "saldo_actual": 4787.36,
-      "detalle": "Pago Servicio Público: ICEE 2067529",
+      "saldo_anterior": 280000.0,
+      "credito": 1331680.85,
+      "debito": 0.0,
+      "saldo_actual": 1611680.85,
+      "detalle": "Depósito Nómina SALARIO MAY 2025",
       "descripcion": "",
-      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715 C.C. CR78081400011031077153"
+      "observacion": "ABONO NOMINA - REMESA 20250502"
     },
     {
-      "fecha": "02/05/2025",
-      "saldo_anterior": 4787.36,
-      "credito": 150000.00,
-      "debito": 0.00,
-      "saldo_actual": 154787.36,
-      "detalle": "Traslado entre Cuentas Envio ODBRefNumber: 59975003",
+      "fecha": "04/05/2025",
+      "saldo_anterior": 1611680.85,
+      "credito": 0.0,
+      "debito": 4281.9,
+      "saldo_actual": 1607398.95,
+      "detalle": "Comercio WALMART CIUDAD QUESADA CR Num. Tarjeta 4345*******0024",
       "descripcion": "",
-      "observacion": "NC TRANSF. CTAS, TRANSACCION # 99044379"
+      "observacion": "TM: S Autorizacion: 724673 Ref: 558965981712"
     },
     {
-      "fecha": "02/05/2025",
-      "saldo_anterior": 154787.36,
-      "credito": 0.00,
-      "debito": 6035.00,
-      "saldo_actual": 148752.36,
-      "detalle": "Comercio SUPERMERCADO MULTICOMPR ALAJUELA CR Num. Tarjeta 4345*******0024",
+      "fecha": "04/05/2025",
+      "saldo_anterior": 1607398.95,
+      "credito": 0.0,
+      "debito": 151452.6,
+      "saldo_actual": 1455946.35,
+      "detalle": "Traslado entre Cuentas Envío ODBRef: 59338803",
       "descripcion": "",
-      "observacion": "TM: S Autorizacion: 963733  Referencia No: 512221726530"
+      "observacion": "NC TRANSF. CTAS # 98309686"
     },
     {
-      "fecha": "03/05/2025",
-      "saldo_anterior": 148752.36,
-      "credito": 0.00,
-      "debito": 11271.90,
-      "saldo_actual": 137480.46,
-      "detalle": "Pago Servicio Público: TELEFONICA 63355558",
+      "fecha": "06/05/2025",
+      "saldo_anterior": 1455946.35,
+      "credito": 226867.78,
+      "debito": 0.0,
+      "saldo_actual": 1682814.13,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59792651",
       "descripcion": "",
-      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715 C.C. CR78081400011031077153"
+      "observacion": "NC TRANSF. CTAS # 99126811"
     },
     {
-      "fecha": "03/05/2025",
-      "saldo_anterior": 137480.46,
-      "credito": 5000.00,
-      "debito": 0.00,
-      "saldo_actual": 132480.46,
-      "detalle": "SINPE MOVIL (SERVICIO 83) CorteCabello. Transf",
+      "fecha": "08/05/2025",
+      "saldo_anterior": 1682814.13,
+      "credito": 228843.46,
+      "debito": 0.0,
+      "saldo_actual": 1911657.59,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59583445",
       "descripcion": "",
-      "observacion": "N.D SINPE. Referencia: 202505031483000634252591"
+      "observacion": "NC TRANSF. CTAS # 99369755"
     },
     {
-      "fecha": "03/05/2025",
-      "saldo_anterior": 132480.46,
-      "credito": 0.00,
-      "debito": 1250.00,
-      "saldo_actual": 131230.46,
-      "detalle": "Comercio PANADERIA INOCENTE SAN ALAJUELA CR Num. Tarjeta 4345*******0024",
+      "fecha": "09/05/2025",
+      "saldo_anterior": 1911657.59,
+      "credito": 0.0,
+      "debito": 21059.19,
+      "saldo_actual": 1890598.4,
+      "detalle": "Pago Servicio Público: AGUA POTABLE 264333",
       "descripcion": "",
-      "observacion": "TM: S Autorizacion: 194202  Referencia No: 512231122656"
+      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715"
     },
     {
-      "fecha": "03/05/2025",
-      "saldo_anterior": 131230.46,
-      "credito": 0.00,
-      "debito": 1650.00,
-      "saldo_actual": 129580.46,
-      "detalle": "Comercio MCDONALD S SAN CARLOS  ALAJUELA CR Num. Tarjeta 4345*******0024",
+      "fecha": "09/05/2025",
+      "saldo_anterior": 1890598.4,
+      "credito": 266094.3,
+      "debito": 0.0,
+      "saldo_actual": 2156692.7,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59830754",
       "descripcion": "",
-      "observacion": "TM: S Autorizacion: 316524  Referencia No: 512321082780"
+      "observacion": "NC TRANSF. CTAS # 99486651"
     },
     {
-      "fecha": "03/05/2025",
-      "saldo_anterior": 129580.46,
-      "credito": 0.00,
-      "debito": 4140.00,
-      "saldo_actual": 125440.46,
-      "detalle": "Comercio ALM EL REY 15 SAN CARLOS ALAJUELA CR Num. Tarjeta 4345*******0024",
+      "fecha": "14/05/2025",
+      "saldo_anterior": 2156692.7,
+      "credito": 0.0,
+      "debito": 34253.35,
+      "saldo_actual": 2122439.35,
+      "detalle": "SINPE Móvil Transferencia Envío",
       "descripcion": "",
-      "observacion": ""
+      "observacion": "N.D SINPE. Ref: 202507186436473164"
+    },
+    {
+      "fecha": "15/05/2025",
+      "saldo_anterior": 2122439.35,
+      "credito": 0.0,
+      "debito": 15391.78,
+      "saldo_actual": 2107047.57,
+      "detalle": "Comercio PANADERIA INOCENTE CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 405442 Ref: 593137772291"
+    },
+    {
+      "fecha": "19/05/2025",
+      "saldo_anterior": 2107047.57,
+      "credito": 160742.2,
+      "debito": 0.0,
+      "saldo_actual": 2267789.77,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59430757",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98462987"
+    },
+    {
+      "fecha": "22/05/2025",
+      "saldo_anterior": 2267789.77,
+      "credito": 0.0,
+      "debito": 7130.64,
+      "saldo_actual": 2260659.13,
+      "detalle": "Comercio OUTLET SAN CARLOS CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 657764 Ref: 526662277407"
+    },
+    {
+      "fecha": "23/05/2025",
+      "saldo_anterior": 2260659.13,
+      "credito": 0.0,
+      "debito": 13027.17,
+      "saldo_actual": 2247631.96,
+      "detalle": "Comercio WALMART CIUDAD QUESADA CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 907373 Ref: 557665101568"
+    },
+    {
+      "fecha": "27/05/2025",
+      "saldo_anterior": 2247631.96,
+      "credito": 0.0,
+      "debito": 12093.77,
+      "saldo_actual": 2235538.19,
+      "detalle": "Comercio OUTLET SAN CARLOS CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 823335 Ref: 568289403986"
+    },
+    {
+      "fecha": "28/05/2025",
+      "saldo_anterior": 2235538.19,
+      "credito": 0.0,
+      "debito": 12614.68,
+      "saldo_actual": 2222923.51,
+      "detalle": "Comercio SODA COMEDOR TEC CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 719744 Ref: 535182898196"
+    },
+    {
+      "fecha": "03/06/2025",
+      "saldo_anterior": 2222923.51,
+      "credito": 1553351.03,
+      "debito": 0.0,
+      "saldo_actual": 3776274.54,
+      "detalle": "Depósito Nómina SALARIO JUN 2025",
+      "descripcion": "",
+      "observacion": "ABONO NOMINA - REMESA 20250603"
+    },
+    {
+      "fecha": "04/06/2025",
+      "saldo_anterior": 3776274.54,
+      "credito": 0.0,
+      "debito": 220669.82,
+      "saldo_actual": 3555604.72,
+      "detalle": "Traslado entre Cuentas Envío ODBRef: 59133958",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98549147"
+    },
+    {
+      "fecha": "06/06/2025",
+      "saldo_anterior": 3555604.72,
+      "credito": 132801.13,
+      "debito": 0.0,
+      "saldo_actual": 3688405.85,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59762454",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99832091"
+    },
+    {
+      "fecha": "08/06/2025",
+      "saldo_anterior": 3688405.85,
+      "credito": 0.0,
+      "debito": 3207.4,
+      "saldo_actual": 3685198.45,
+      "detalle": "Comercio ALM EL REY 15 CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 485851 Ref: 529701956150"
+    },
+    {
+      "fecha": "10/06/2025",
+      "saldo_anterior": 3685198.45,
+      "credito": 0.0,
+      "debito": 38968.17,
+      "saldo_actual": 3646230.28,
+      "detalle": "Pago Servicio Público: CABLETV 950317",
+      "descripcion": "",
+      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715"
+    },
+    {
+      "fecha": "10/06/2025",
+      "saldo_anterior": 3646230.28,
+      "credito": 0.0,
+      "debito": 5236.64,
+      "saldo_actual": 3640993.64,
+      "detalle": "Comercio MCDONALD S CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 812751 Ref: 524843114534"
+    },
+    {
+      "fecha": "12/06/2025",
+      "saldo_anterior": 3640993.64,
+      "credito": 9582.09,
+      "debito": 0.0,
+      "saldo_actual": 3650575.73,
+      "detalle": "SINPE Móvil Transferencia Recibida",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202508689929454577"
+    },
+    {
+      "fecha": "13/06/2025",
+      "saldo_anterior": 3650575.73,
+      "credito": 33482.98,
+      "debito": 0.0,
+      "saldo_actual": 3684058.71,
+      "detalle": "SINPE Móvil Transferencia Recibida",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202506652433795679"
+    },
+    {
+      "fecha": "21/06/2025",
+      "saldo_anterior": 3684058.71,
+      "credito": 283632.21,
+      "debito": 0.0,
+      "saldo_actual": 3967690.92,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59076176",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98777582"
+    },
+    {
+      "fecha": "22/06/2025",
+      "saldo_anterior": 3967690.92,
+      "credito": 0.0,
+      "debito": 12084.41,
+      "saldo_actual": 3955606.51,
+      "detalle": "Comercio SUPERMERCADO MULTICOMPRA CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 191531 Ref: 592162480935"
+    },
+    {
+      "fecha": "23/06/2025",
+      "saldo_anterior": 3955606.51,
+      "credito": 0.0,
+      "debito": 25849.21,
+      "saldo_actual": 3929757.3,
+      "detalle": "SINPE Móvil Transferencia Envío",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202505279800760257"
+    },
+    {
+      "fecha": "25/06/2025",
+      "saldo_anterior": 3929757.3,
+      "credito": 29965.4,
+      "debito": 0.0,
+      "saldo_actual": 3959722.7,
+      "detalle": "SINPE Móvil Transferencia Recibida",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202510228997443862"
+    },
+    {
+      "fecha": "27/06/2025",
+      "saldo_anterior": 3959722.7,
+      "credito": 180398.44,
+      "debito": 0.0,
+      "saldo_actual": 4140121.14,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59049315",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99008969"
+    },
+    {
+      "fecha": "28/06/2025",
+      "saldo_anterior": 4140121.14,
+      "credito": 0.0,
+      "debito": 7055.11,
+      "saldo_actual": 4133066.03,
+      "detalle": "Comercio RESTAURANTE JUFULOU CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 262869 Ref: 536933012728"
+    },
+    {
+      "fecha": "03/07/2025",
+      "saldo_anterior": 4133066.03,
+      "credito": 1593661.21,
+      "debito": 0.0,
+      "saldo_actual": 5726727.24,
+      "detalle": "Depósito Nómina SALARIO JUL 2025",
+      "descripcion": "",
+      "observacion": "ABONO NOMINA - REMESA 20250703"
+    },
+    {
+      "fecha": "13/07/2025",
+      "saldo_anterior": 5726727.24,
+      "credito": 31789.12,
+      "debito": 0.0,
+      "saldo_actual": 5758516.36,
+      "detalle": "SINPE Móvil Transferencia Recibida",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202507225401901186"
+    },
+    {
+      "fecha": "14/07/2025",
+      "saldo_anterior": 5758516.36,
+      "credito": 0.0,
+      "debito": 218653.74,
+      "saldo_actual": 5539862.62,
+      "detalle": "Traslado entre Cuentas Envío ODBRef: 59432708",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98835721"
+    },
+    {
+      "fecha": "14/07/2025",
+      "saldo_anterior": 5539862.62,
+      "credito": 251596.04,
+      "debito": 0.0,
+      "saldo_actual": 5791458.66,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59023417",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98030982"
+    },
+    {
+      "fecha": "14/07/2025",
+      "saldo_anterior": 5791458.66,
+      "credito": 0.0,
+      "debito": 34059.46,
+      "saldo_actual": 5757399.2,
+      "detalle": "SINPE Móvil Transferencia Envío",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202510078014664637"
+    },
+    {
+      "fecha": "15/07/2025",
+      "saldo_anterior": 5757399.2,
+      "credito": 0.0,
+      "debito": 10950.59,
+      "saldo_actual": 5746448.61,
+      "detalle": "Comercio RESTAURANTE JUFULOU CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 972660 Ref: 509806054772"
+    },
+    {
+      "fecha": "16/07/2025",
+      "saldo_anterior": 5746448.61,
+      "credito": 0.0,
+      "debito": 39489.52,
+      "saldo_actual": 5706959.09,
+      "detalle": "Pago Servicio Público: TELEFONICA 249982",
+      "descripcion": "",
+      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715"
+    },
+    {
+      "fecha": "18/07/2025",
+      "saldo_anterior": 5706959.09,
+      "credito": 248316.03,
+      "debito": 0.0,
+      "saldo_actual": 5955275.12,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59473943",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99077697"
+    },
+    {
+      "fecha": "18/07/2025",
+      "saldo_anterior": 5955275.12,
+      "credito": 232830.89,
+      "debito": 0.0,
+      "saldo_actual": 6188106.01,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59456467",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99907631"
+    },
+    {
+      "fecha": "19/07/2025",
+      "saldo_anterior": 6188106.01,
+      "credito": 159996.82,
+      "debito": 0.0,
+      "saldo_actual": 6348102.83,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59058838",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99827604"
+    },
+    {
+      "fecha": "21/07/2025",
+      "saldo_anterior": 6348102.83,
+      "credito": 32807.12,
+      "debito": 0.0,
+      "saldo_actual": 6380909.95,
+      "detalle": "SINPE Móvil Transferencia Recibida",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202509781618233644"
+    },
+    {
+      "fecha": "22/07/2025",
+      "saldo_anterior": 6380909.95,
+      "credito": 0.0,
+      "debito": 12083.64,
+      "saldo_actual": 6368826.31,
+      "detalle": "Comercio RESTAURANTE JUFULOU CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 721155 Ref: 590593942206"
+    },
+    {
+      "fecha": "27/07/2025",
+      "saldo_anterior": 6368826.31,
+      "credito": 0.0,
+      "debito": 265488.91,
+      "saldo_actual": 6103337.4,
+      "detalle": "Traslado entre Cuentas Envío ODBRef: 59747932",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99867229"
+    },
+    {
+      "fecha": "03/08/2025",
+      "saldo_anterior": 6103337.4,
+      "credito": 37879.72,
+      "debito": 0.0,
+      "saldo_actual": 6141217.12,
+      "detalle": "SINPE Móvil Transferencia Recibida",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202507451095745939"
+    },
+    {
+      "fecha": "04/08/2025",
+      "saldo_anterior": 6141217.12,
+      "credito": 1473090.0,
+      "debito": 0.0,
+      "saldo_actual": 7614307.12,
+      "detalle": "Depósito Nómina SALARIO AUG 2025",
+      "descripcion": "",
+      "observacion": "ABONO NOMINA - REMESA 20250804"
+    },
+    {
+      "fecha": "05/08/2025",
+      "saldo_anterior": 7614307.12,
+      "credito": 131485.04,
+      "debito": 0.0,
+      "saldo_actual": 7745792.16,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59997774",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99564236"
+    },
+    {
+      "fecha": "06/08/2025",
+      "saldo_anterior": 7745792.16,
+      "credito": 215656.69,
+      "debito": 0.0,
+      "saldo_actual": 7961448.85,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59929343",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99861210"
+    },
+    {
+      "fecha": "07/08/2025",
+      "saldo_anterior": 7961448.85,
+      "credito": 0.0,
+      "debito": 25256.74,
+      "saldo_actual": 7936192.11,
+      "detalle": "Pago Servicio Público: AGUA POTABLE 397339",
+      "descripcion": "",
+      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715"
+    },
+    {
+      "fecha": "10/08/2025",
+      "saldo_anterior": 7936192.11,
+      "credito": 161217.53,
+      "debito": 0.0,
+      "saldo_actual": 8097409.64,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59959787",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98366237"
+    },
+    {
+      "fecha": "11/08/2025",
+      "saldo_anterior": 8097409.64,
+      "credito": 11970.15,
+      "debito": 0.0,
+      "saldo_actual": 8109379.79,
+      "detalle": "SINPE Móvil Transferencia Recibida",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202508116443802416"
+    },
+    {
+      "fecha": "20/08/2025",
+      "saldo_anterior": 8109379.79,
+      "credito": 0.0,
+      "debito": 29265.16,
+      "saldo_actual": 8080114.63,
+      "detalle": "SINPE Móvil Transferencia Envío",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202509158186844995"
+    },
+    {
+      "fecha": "21/08/2025",
+      "saldo_anterior": 8080114.63,
+      "credito": 179237.16,
+      "debito": 0.0,
+      "saldo_actual": 8259351.79,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59287851",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99230519"
+    },
+    {
+      "fecha": "25/08/2025",
+      "saldo_anterior": 8259351.79,
+      "credito": 0.0,
+      "debito": 22977.59,
+      "saldo_actual": 8236374.2,
+      "detalle": "SINPE Móvil Transferencia Envío",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202508010781137063"
+    },
+    {
+      "fecha": "27/08/2025",
+      "saldo_anterior": 8236374.2,
+      "credito": 189606.9,
+      "debito": 0.0,
+      "saldo_actual": 8425981.1,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59621140",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98539346"
+    },
+    {
+      "fecha": "28/08/2025",
+      "saldo_anterior": 8425981.1,
+      "credito": 0.0,
+      "debito": 15734.1,
+      "saldo_actual": 8410247.0,
+      "detalle": "Comercio OUTLET SAN CARLOS CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 986906 Ref: 568451485879"
+    },
+    {
+      "fecha": "28/08/2025",
+      "saldo_anterior": 8410247.0,
+      "credito": 0.0,
+      "debito": 5276.71,
+      "saldo_actual": 8404970.29,
+      "detalle": "SINPE Móvil Transferencia Envío",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202507928196892185"
+    },
+    {
+      "fecha": "01/09/2025",
+      "saldo_anterior": 8404970.29,
+      "credito": 0.0,
+      "debito": 257657.09,
+      "saldo_actual": 8147313.2,
+      "detalle": "Traslado entre Cuentas Envío ODBRef: 59791329",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99512671"
+    },
+    {
+      "fecha": "05/09/2025",
+      "saldo_anterior": 8147313.2,
+      "credito": 1426717.24,
+      "debito": 0.0,
+      "saldo_actual": 9574030.44,
+      "detalle": "Depósito Nómina SALARIO SEP 2025",
+      "descripcion": "",
+      "observacion": "ABONO NOMINA - REMESA 20250905"
+    },
+    {
+      "fecha": "05/09/2025",
+      "saldo_anterior": 9574030.44,
+      "credito": 0.0,
+      "debito": 281755.6,
+      "saldo_actual": 9292274.84,
+      "detalle": "Traslado entre Cuentas Envío ODBRef: 59234836",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98925570"
+    },
+    {
+      "fecha": "06/09/2025",
+      "saldo_anterior": 9292274.84,
+      "credito": 0.0,
+      "debito": 6087.42,
+      "saldo_actual": 9286187.42,
+      "detalle": "Comercio WALMART CIUDAD QUESADA CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 950780 Ref: 517516217531"
+    },
+    {
+      "fecha": "12/09/2025",
+      "saldo_anterior": 9286187.42,
+      "credito": 38709.88,
+      "debito": 0.0,
+      "saldo_actual": 9324897.3,
+      "detalle": "SINPE Móvil Transferencia Recibida",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202510312403535622"
+    },
+    {
+      "fecha": "15/09/2025",
+      "saldo_anterior": 9324897.3,
+      "credito": 0.0,
+      "debito": 19318.68,
+      "saldo_actual": 9305578.62,
+      "detalle": "Pago Servicio Público: ICE 127321",
+      "descripcion": "",
+      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715"
+    },
+    {
+      "fecha": "16/09/2025",
+      "saldo_anterior": 9305578.62,
+      "credito": 0.0,
+      "debito": 3235.16,
+      "saldo_actual": 9302343.46,
+      "detalle": "Comercio SUPERMERCADO MULTICOMPRA CR Num. Tarjeta 4345*******0024",
+      "descripcion": "",
+      "observacion": "TM: S Autorizacion: 458102 Ref: 502211404058"
+    },
+    {
+      "fecha": "18/09/2025",
+      "saldo_anterior": 9302343.46,
+      "credito": 12041.44,
+      "debito": 0.0,
+      "saldo_actual": 9314384.9,
+      "detalle": "SINPE Móvil Transferencia Recibida",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202510636929125761"
+    },
+    {
+      "fecha": "19/09/2025",
+      "saldo_anterior": 9314384.9,
+      "credito": 0.0,
+      "debito": 234856.92,
+      "saldo_actual": 9079527.98,
+      "detalle": "Traslado entre Cuentas Envío ODBRef: 59355215",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99243233"
+    },
+    {
+      "fecha": "20/09/2025",
+      "saldo_anterior": 9079527.98,
+      "credito": 22777.89,
+      "debito": 0.0,
+      "saldo_actual": 9102305.87,
+      "detalle": "SINPE Móvil Transferencia Recibida",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202505209708438712"
+    },
+    {
+      "fecha": "23/09/2025",
+      "saldo_anterior": 9102305.87,
+      "credito": 188166.89,
+      "debito": 0.0,
+      "saldo_actual": 9290472.76,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59522101",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98279848"
+    },
+    {
+      "fecha": "23/09/2025",
+      "saldo_anterior": 9290472.76,
+      "credito": 0.0,
+      "debito": 157654.57,
+      "saldo_actual": 9132818.19,
+      "detalle": "Traslado entre Cuentas Envío ODBRef: 59037900",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99777683"
+    },
+    {
+      "fecha": "27/09/2025",
+      "saldo_anterior": 9132818.19,
+      "credito": 167435.81,
+      "debito": 0.0,
+      "saldo_actual": 9300254.0,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59754210",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99011299"
+    },
+    {
+      "fecha": "01/10/2025",
+      "saldo_anterior": 9300254.0,
+      "credito": 1466893.96,
+      "debito": 0.0,
+      "saldo_actual": 10767147.96,
+      "detalle": "Depósito Nómina SALARIO OCT 2025",
+      "descripcion": "",
+      "observacion": "ABONO NOMINA - REMESA 20251001"
+    },
+    {
+      "fecha": "07/10/2025",
+      "saldo_anterior": 10767147.96,
+      "credito": 125218.44,
+      "debito": 0.0,
+      "saldo_actual": 10892366.4,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59836386",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99008862"
+    },
+    {
+      "fecha": "07/10/2025",
+      "saldo_anterior": 10892366.4,
+      "credito": 0.0,
+      "debito": 31954.62,
+      "saldo_actual": 10860411.78,
+      "detalle": "Pago Servicio Público: TELEFONICA 206159",
+      "descripcion": "",
+      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715"
+    },
+    {
+      "fecha": "08/10/2025",
+      "saldo_anterior": 10860411.78,
+      "credito": 0.0,
+      "debito": 8246.11,
+      "saldo_actual": 10852165.67,
+      "detalle": "SINPE Móvil Transferencia Envío",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202507257339096859"
+    },
+    {
+      "fecha": "11/10/2025",
+      "saldo_anterior": 10852165.67,
+      "credito": 246399.9,
+      "debito": 0.0,
+      "saldo_actual": 11098565.57,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59670997",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98076216"
+    },
+    {
+      "fecha": "12/10/2025",
+      "saldo_anterior": 11098565.57,
+      "credito": 255388.09,
+      "debito": 0.0,
+      "saldo_actual": 11353953.66,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59014509",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98229184"
+    },
+    {
+      "fecha": "16/10/2025",
+      "saldo_anterior": 11353953.66,
+      "credito": 185130.33,
+      "debito": 0.0,
+      "saldo_actual": 11539083.99,
+      "detalle": "Traslado entre Cuentas Pago ODBRef: 59634076",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 99403865"
+    },
+    {
+      "fecha": "21/10/2025",
+      "saldo_anterior": 11539083.99,
+      "credito": 0.0,
+      "debito": 226695.87,
+      "saldo_actual": 11312388.12,
+      "detalle": "Traslado entre Cuentas Envío ODBRef: 59234782",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98446361"
+    },
+    {
+      "fecha": "23/10/2025",
+      "saldo_anterior": 11312388.12,
+      "credito": 0.0,
+      "debito": 29594.85,
+      "saldo_actual": 11282793.27,
+      "detalle": "SINPE Móvil Transferencia Envío",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202505086831402210"
+    },
+    {
+      "fecha": "25/10/2025",
+      "saldo_anterior": 11282793.27,
+      "credito": 0.0,
+      "debito": 17006.98,
+      "saldo_actual": 11265786.29,
+      "detalle": "SINPE Móvil Transferencia Envío",
+      "descripcion": "",
+      "observacion": "N.D SINPE. Ref: 202507693663054937"
+    },
+    {
+      "fecha": "27/10/2025",
+      "saldo_anterior": 11265786.29,
+      "credito": 0.0,
+      "debito": 42137.85,
+      "saldo_actual": 11223648.44,
+      "detalle": "Pago Servicio Público: AGUA POTABLE 442210",
+      "descripcion": "",
+      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715"
+    },
+    {
+      "fecha": "28/10/2025",
+      "saldo_anterior": 11223648.44,
+      "credito": 0.0,
+      "debito": 166709.81,
+      "saldo_actual": 11056938.63,
+      "detalle": "Traslado entre Cuentas Envío ODBRef: 59328804",
+      "descripcion": "",
+      "observacion": "NC TRANSF. CTAS # 98297223"
+    },
+    {
+      "fecha": "31/10/2025",
+      "saldo_anterior": 11056938.63,
+      "credito": 0.0,
+      "debito": 37004.66,
+      "saldo_actual": 11019933.97,
+      "detalle": "Pago Servicio Público: ICE 674406",
+      "descripcion": "",
+      "observacion": "N.D. PAGO SERVICIOS CTA SAV 3107715"
     }
-  ]
+  ],
+  "totales": {
+    "total_creditos": 13523462.16,
+    "total_debitos": 2783528.19
+  }
 }
